@@ -15,20 +15,30 @@
   --gray-500: #6b7280;
   --gray-400: #9ca3af;
   --gray-300: #d1d5db;
+  --gray-200: #e5e7eb;
   --gray-100: #f3f4f6;
   --gray-50: #f9fafb;
   --white: #fff;
   --black: #000;
   --green: hsla(134, 39, 37, 0.3);
+  --bg: #fdfeff;
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--bg);
   font-size: 16px;
   color: var(--gray-900);
   font-family: "Jost", sans-serif;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
   margin: 0 160px;
+  max-width: 1121px;
 }
 
 .top-nav {
@@ -49,10 +59,10 @@ ul.top-nav > li:hover {
 
 header {
   display: flex;
-  width: 1121px;
   justify-content: space-between;
   align-items: center;
   margin-top: 48px;
+  width: 1121px;
 }
 
 #logo {
@@ -144,7 +154,6 @@ h2 {
 }
 
 .scroll-img:hover {
-  border-radius: 0.5rem;
   background: linear-gradient(
       0deg,
       rgba(58, 133, 76, 0.1) 0%,
@@ -157,7 +166,6 @@ h2 {
   background-image: url("assets/eyeglasses-brown-round.png");
 }
 #new2:hover {
-  border-radius: 0.5rem;
   background: linear-gradient(
       0deg,
       rgba(58, 133, 76, 0.1) 0%,
@@ -170,7 +178,6 @@ h2 {
   background-image: url("assets/eyeglasses-green-square.png");
 }
 #new3:hover {
-  border-radius: 0.5rem;
   background: linear-gradient(
       0deg,
       rgba(58, 133, 76, 0.1) 0%,
@@ -183,7 +190,6 @@ h2 {
   background-image: url("assets/eyeglasses-green.png");
 }
 #new4:hover {
-  border-radius: 0.5rem;
   background: linear-gradient(
       0deg,
       rgba(58, 133, 76, 0.1) 0%,
@@ -196,7 +202,6 @@ h2 {
   background-image: url("assets/eyeglasses-navy.png");
 }
 #new5:hover {
-  border-radius: 0.5rem;
   background: linear-gradient(
       0deg,
       rgba(58, 133, 76, 0.1) 0%,
@@ -214,4 +219,282 @@ h2 {
   margin: 40px 0px 88px 0;
   width: 1121px;
   overflow: scroll;
+}
+
+#man-illustration {
+  background-image: url("assets/man-drawing.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 380px;
+  height: 200px;
+  background-position: 0px 20px;
+  border-bottom: 4px solid var(--gray-900);
+}
+
+.intro-eyeglasses {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#mid1 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/mens-eye1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid1:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/mens-eye1.png) lightgray 50% / cover no-repeat;
+}
+
+#mid2 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/mens-eye2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid2:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/mens-eye2.png) lightgray 50% / cover no-repeat;
+}
+#mid3 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/eyeglasses-brown-square.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid3:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/eyeglasses-brown-square.png) lightgray 50% / cover no-repeat;
+}
+
+#mid4 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/mens-eye3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid4:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/mens-eye3.png) lightgray 50% / cover no-repeat;
+}
+
+.four-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  margin: 72px 0;
+}
+#gray-btn {
+  margin: 0 auto 56px auto;
+}
+#gray-btn:hover {
+  background-color: var(--gray-200);
+}
+
+#mid5 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/eyeglasses-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid5:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/eyeglasses-red.png) lightgray 50% / cover no-repeat;
+}
+
+#mid6 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/eyeglasses-brown-round.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid6:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/eyeglasses-brown-round.png) lightgray 50% / cover no-repeat;
+}
+
+#mid7 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/eyeglasses-green-square.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid7:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/eyeglasses-green-square.png) lightgray 50% / cover no-repeat;
+}
+
+#mid8 {
+  width: 550px;
+  height: 550px;
+  background-image: url("assets/eyeglasses-navy.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#mid8:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(58, 133, 76, 0.1) 0%,
+      rgba(58, 133, 76, 0.1) 100%
+    ),
+    url(assets/eyeglasses-navy.png) lightgray 50% / cover no-repeat;
+}
+
+.date {
+  color: var(--gray-800);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.subject {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.subject:hover {
+  color: var(--gray-500);
+}
+
+.date-subject {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.news-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+#read-btn {
+  margin: 88px auto;
+}
+
+#read-btn:hover {
+  background-color: var(--gray-200);
+}
+
+.subscribe {
+  font-size: 20px;
+  color: var(--gray-600);
+  font-weight: 300;
+  margin-top: 32px;
+}
+
+#subscribe-email {
+  width: 502px;
+  color: var(--gray-400);
+  padding: 32px 10px;
+  border: 2px solid var(--gray-900);
+  border-bottom: 4px solid var(--gray-900);
+}
+
+#send-icon {
+  background-color: var(--gray-50);
+  padding: 24px;
+  border-top: 2px solid var(--gray-900);
+  border-right: 2px solid var(--gray-900);
+  border-bottom: 4px solid var(--gray-900);
+}
+
+#send-icon:hover {
+  background-color: var(--gray-300);
+}
+
+.subscribe-btn {
+  display: flex;
+  margin: 100px 0 96px 0;
+}
+
+.newsletter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#eyeglasses-drawing {
+  opacity: 0.2;
+  position: relative;
+  z-index: -100;
+  transform: translate(-50px, -50px);
+  left: 30%;
+  top: 200px;
 }
