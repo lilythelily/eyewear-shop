@@ -12,7 +12,7 @@
     <main>
       <div class="hamburger-drop">
         <header>
-          <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
+          <img src="/assets/outline-logo.svg" alt="logo" width="100" class="logo" />
           <ul class="top-nav">
             <li>Home</li>
             <li>About</li>
@@ -229,9 +229,8 @@
         </div>
       </div>
 
-      <!-- contents start here -->
+      <!-- shop details start here. when proceeding to check-out, it will be hidden-->
 
- 
 <section class="cart-section">
               <img
                 src="/assets/eyeglasses-red.png"
@@ -265,6 +264,12 @@
               </aside>
 </section>
 
+ <!-- Order summary page starts here. when checking-out, it will be displayed. -->
+
+ <h2 class="hidden" id="order-summary">Order Summary</h2>
+
+ <!-- Cart card will stay displayed both for detail page and check-out. -->
+
 <div class="cart">
 <div class="cart-line">
     <div class="left-items">
@@ -272,10 +277,7 @@
 <div class="name-number">
 <p class="line-name">Popsicle</p><p class="line-number">AFS-25B</p></div>
 
-<div class="counter" id="line-counter">
-            <img src="/assets/icons/caret-down.svg" alt="carret" id="carret-down">
-            <p class="qty">1</p>
-            <img src="/assets/icons/caret-up.svg" alt="carret" id="carret-up"></div>
+<p>Qty: <span class="item-qty">1</span>x</p>
 
             <p class="line-price">USD 230</p></div>
             <img src="/assets/icons/trash-outline.svg" alt="trash" class="trash"></div>
@@ -283,19 +285,75 @@
             <div class="total">
            <div class="amount-line"> <p class="amount-title">Shipping</p><p id="shipping-amount">Free</p></div>
            <div class="amount-line"> <p class="amount-title">TOTAL</p><p id="total-amount">USD 770.00</p></div></div>
+
+           <!-- check out btn will be hidden on check-out screen. -->
             
            <button class="filled-btn" id="check-out">Check Out<img src="/assets/icons/arrow-right.svg"></button></div>
+
+<!-- shipping address will be displayed when proceeded to check out. -->
+
+<div class="shipping-container, hidden">
+ <p class="shipping-address, hidden">Shipping Address</p>
+
+ <div class="shipping-form">
+
+            <label for="shipping-name">First Name<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="shipping-name" placeholder="Jane" />
+            <small class="hidden">This field is required</small>
+
+            <label for="last-name">Last Name<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="last-name" placeholder="Smith" />
+            <small class="hidden">This field is required</small>
+
+            <label for="tel">Telephone Number<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="tel" placeholder="1234-5678" />
+            <small class="hidden">This field is required</small>
+
+            <label for="shipping-email">Email<span class="required">*</span></label>
+            <input type="email" class="shipping-input" id="shipping-email" placeholder="jane@gmail.com" />
+            <small class="hidden">This field is required</small>
+
+<label for="address">Address<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="address" placeholder="123 Amphitheatre Parkway, Mountain View, CA 94093" />
+            <small class="hidden">This field is required</small>
+
+            <div class="two-columns">
+              <div>
+            <label for="zip">Zip Code<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="zip" placeholder="90001" />
+            <small class="hidden">This field is required</small></div>
+
+            <div>
+            <label for="country">Country<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="country" placeholder="United States" />
+            <small class="hidden">This field is required</small></div></div>
+            
+
+            <button class="filled-btn" id="proceed">
+              Proceed to Payment<img src="/assets/icons/arrow-right.svg" alt="arrow" width="24" />
+            </button>
+          </div>
+</div>
+
+<!-- shipping form ends -->
+
+<!-- continue shopping text will be hidden on check-out screen. -->
 
 <div class="continue">
     <img src="/assets/icons/arrow-left.svg" alt="arrow"><p class="shopping">Continue shopping</p>
 </div>
+
+
+
+
+
 
         
           <!-- contact form -->
 
           <form class="hidden">
             <label for="name">Name<span class="required">*</span></label>
-            <input type="text" id="name" placeholder="Jane Doe" />
+            <input type="text" id="name" placeholder="Jane Smith" />
             <small class="hidden">This field is required</small>
 
             <label for="email">Email<span class="required">*</span></label>
@@ -315,7 +373,7 @@
     </main>
 
     <footer>
-      <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
+      <img src="/assets/outline-logo.svg" alt="logo" width="100" class="logo" />
       <ul class="footer-nav">
         <li>Home</li>
         <li>About</li>

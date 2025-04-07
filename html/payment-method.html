@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Payment method</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/shop.css" />
   </head>
   <body>
+
+    <!-- overlay will be displayed once popup shows up. -->
+    <div class="overlay hidden"></div>
     <main>
       <div class="hamburger-drop">
         <header>
-          <img
-            src="/assets/outline-logo.svg"
-            alt="logo"
-            width="100"
-            id="logo"
-          />
+          <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
           <ul class="top-nav">
             <li>Home</li>
             <li>About</li>
@@ -33,12 +32,7 @@
         </header>
 
         <div class="header2 hidden">
-          <img
-            src="/assets/outline-logo.svg"
-            alt="logo"
-            width="100"
-            id="logo"
-          />
+          <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
           <ul class="top-nav">
             <li>Home</li>
             <li>About</li>
@@ -95,11 +89,7 @@
               />
               <p class="menu">Shop</p>
             </div>
-            <img
-              src="/assets/icons/chevron-down.svg"
-              alt="chevron"
-              width="24"
-            />
+            <img src="/assets/icons/chevron-down.svg" alt="chevron" width="24" />
           </div>
 
           <div class="line">
@@ -242,84 +232,90 @@
         </div>
       </div>
 
-      <!-- contents start -->
-      <section>
-        <article>
-          <div id="bar"></div>
-          <h2>About Us</h2>
-          <h3>
-            We take pride in our eyewear, genuinely handcrafted with
-            unparalleled workmanship.
-          </h3>
-          <p class="text">
-            Our artisanal eyewear journey started in 2002. Inspired by the
-            beauty and excellent functionality of vintage eyeglasses, we design
-            our own collection, source sustainable materials and manufacture
-            one-of-a-kind eyeglasses in our own studio. <br /><br />
-            Step into a world where time slows, and the art of eyewear takes
-            center stage. Our studio is a haven for genuine craftsmanship, where
-            each pair of eyeglasses is meticulously handcrafted honoring
-            timeless techniques passed down through generations.
-            <br /><br />We believe in the enduring beauty of handcrafted
-            objects. We also believe that those objects will resonate with
-            like-minded people. <br /><br />Experience the difference of eyewear
-            crafted with uncompromising attention to detail and genuine passion
-            for eyeglasses.
-          </p>
-        </article>
+      
+ <!-- Payment method starts here -->
 
-        <div id="bg"></div>
-      </section>
+ <h2 class="payment-method">Payment Method</h2>
+ <p class="secure">All transactions are secure and encrypted.</p>
 
-      <div class="four-img">
-        <div id="workshop1"></div>
-        <div id="workshop2"></div>
-        <div id="workshop3"></div>
-        <div id="workshop4"></div>
-      </div>
 
-      <div class="newsletter">
-        <img
-          src="/assets/drawing2-eyeglasses.png"
-          alt="eyeglasses"
-          width="400"
-          id="eyeglasses-drawing"
-        />
-        <h2>Stay Updated</h2>
-        <p class="subscribe">
-          Subscribe to our news letter for exclusive offers and the lates
-          information!
-        </p>
+ <div class="payment-form">
 
-        <div class="subscribe-btn">
-          <div class="subscribe-email">Your Email Address</div>
-          <img
-            src="/assets/icons/send.svg"
-            alt="send"
-            width="87"
-            class="send-icon"
-          />
+    <div class="radio-title">
+    <input type="radio" class="radio"><p class="payment-title">Credit card</p>
+
+    <div class="credit-cards">
+    <img src="/assets/icons/visa_inc_logo.svg.png" alt="visa" height="24">
+    <img src="/assets/icons/master-card.png" alt="master-card" height="34.02">
+    <img src="/assets/icons/amex.png" alt="amex" height="43"></div></div>
+
+            <label for="card-number">Card Number<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="card-number" placeholder="1234 5678 9012" />
+            <small class="hidden">This field is required</small>
+
+            <label for="card-name">Name on Card<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="card-name" placeholder="Jane Smith" />
+            <small class="hidden">This field is required</small>
+
+
+     
+
+            <div class="two-columns">
+              <div>
+            <label for="expiration">Expiration (MM/YY)<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="expiration" placeholder="11/2028" />
+            <small class="hidden">This field is required</small></div>
+
+            <div>
+                   <label for="cvv">CVV<span class="required">*</span></label>
+            <input type="text" class="shipping-input" id="cvv" placeholder="123" />
+            <small class="hidden">This field is required</small></div></div><br>
+            
+              <div class="radio-title">
+    <input type="radio" class="radio"><img src="/assets/icons/paypal.png" alt="paypal"></div>
+
+     <div class="radio-title">
+    <input type="radio" class="radio"><img src="/assets/icons/amazon-pay.png" alt="amazon"></div>
+
+             <button class="filled-btn" id="confirm">
+              Confirm Payment<img src="/assets/icons/check-outline.svg" alt="check" width="24" />
+            </button>
+
+
+            <button class="filled-btn, hidden" id="proceed">
+              Proceed to Payment<img src="/assets/icons/arrow-right.svg" alt="arrow" width="24" />
+            </button>
+          </div>
+
+
+<!-- thank you popup -->
+
+<div class="confirmation hidden">
+<img src="/assets/hero-eyeglasses.png" alt="eyeglasses" id="thanks-img">
+<p class="thanks">Thank you!</p>
+<p class="message">Email confirmation will be sent to you.</br>
+We will ship your item(s) within 2 working days!</p></div>
+        
+          <!-- contact form -->
+
+          <form class="hidden">
+            <label for="name">Name<span class="required">*</span></label>
+            <input type="text" id="name" placeholder="Jane Smith" />
+            <small class="hidden">This field is required</small>
+
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" placeholder="jane@gmail.com" />
+            <small class="hidden">This field is required</small>
+
+            <label for="message">Message<span class="required">*</span></label>
+            <textarea id="message" placeholder="Enter something..."></textarea
+            ><small class="hidden">This field is required</small>
+
+            <button class="filled-btn" id="send">
+              Send<img src="/assets/icons/send.svg" alt="send" width="24" />
+            </button>
+          </form>
         </div>
-
-        <!-- contact form -->
-
-        <form class="hidden">
-          <label for="name">Name<span class="required">*</span></label>
-          <input type="text" id="name" placeholder="Jane Doe" />
-          <small class="hidden">This field is required</small>
-
-          <label for="email">Email<span class="required">*</span></label>
-          <input type="email" id="email" placeholder="jane@gmail.com" />
-          <small class="hidden">This field is required</small>
-
-          <label for="message">Message<span class="required">*</span></label>
-          <textarea id="message" placeholder="Enter something..."></textarea
-          ><small class="hidden">This field is required</small>
-
-          <button class="filled-btn" id="send">
-            Send<img src="/assets/icons/send.svg" alt="send" width="24" />
-          </button>
-        </form>
       </div>
     </main>
 

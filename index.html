@@ -10,11 +10,11 @@
     <main>
             <div class="hamburger-drop">
     <header>
-      <img src="assets/outline-logo.svg" alt="logo" width="100" id="logo"/>
+      <img src="assets/outline-logo.svg" alt="logo" width="100" class="logo"/>
       <ul class="top-nav">
         <li>Home</li>
         <li>About</li>
-        <li>Shop</li>
+        <li id="shop">Shop</li>
         <li>Cart</li>
       </ul>
       
@@ -204,15 +204,21 @@
         <button class="outline-btn" id="read-btn">Read more<img src="assets/icons/ArrowRight.svg" alt="arrow"></button>
       </div>
 
+      <!-- news letter subscription -->
+
       <div class="newsletter">
          <img src="assets/drawing2-eyeglasses.png" alt="eyeglasses" width="400" id="eyeglasses-drawing">
         <h2>Stay Updated</h2>
         <p class="subscribe">Subscribe to our news letter for exclusive offers and the lates information!</p>
-       
 
-        <div class="subscribe-btn"><div id="subscribe-email">Your Email Address</div>
-          <img src="assets/icons/send.svg" alt="send" width="87" id="send-icon">
-        </div>
+        
+       
+        <div class="email-error">
+          <div class="input-icon">
+        <input type="text" class="subscribe-email" placeholder="Your Email Address"><div class="send-icon"><img src="/assets/icons/send-gray.svg" alt="send"></div></div>
+        <small class="subsc-error, hidden">Please enter valid email address.</small></div>
+
+      
 
         <!-- contact form -->
 
@@ -235,7 +241,7 @@
     </main>
 
       <footer>
-        <img src="assets/outline-logo.svg" alt="logo" width="100" id="logo"/>
+        <img src="assets/outline-logo.svg" alt="logo" width="100" class="logo"/>
       <ul class="footer-nav">
         <li>Home</li>
         <li>About</li>
@@ -254,7 +260,7 @@
 
 
 
-
+<script src="/js/index.js"></script>
 
   </body>
 </html>

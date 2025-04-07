@@ -212,11 +212,13 @@ aside {
   font-size: 36px;
   font-weight: 600;
   color: var(--gray-800);
-  margin-left: 60px;
+  margin-left: 32px;
 }
 
-#line-counter {
-  margin: 0;
+.item-qty {
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 4px;
 }
 
 .trash {
@@ -267,7 +269,7 @@ aside {
 .amount-line {
   display: flex;
   align-items: center;
-  width: 470px;
+  width: 50%;
   justify-content: space-between;
 }
 
@@ -309,4 +311,250 @@ aside {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-bottom: 60px;
+}
+
+/* detail page responsive */
+
+@media (max-width: 900px) {
+  .cart-section {
+    grid-template-columns: 40% 60%;
+  }
+
+  .small-img {
+    width: 40px;
+    height: 40px;
+  }
+  .line-price {
+    font-size: 24px;
+  }
+  .line-name {
+    font-size: 24px;
+  }
+  .trash {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
+
+  .amount-title {
+    font-size: 20px;
+  }
+
+  #total-amount {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 660px) {
+  .cart-section {
+    grid-template-columns: 1fr;
+  }
+  .small-img {
+    display: none;
+  }
+  .amount-line {
+    width: 100%;
+  }
+  .cart-line {
+    padding-left: 0;
+  }
+}
+
+/* order summary */
+
+#order-summary {
+  margin: 100px 0 -80px 0;
+}
+
+.shipping-address {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 40px;
+}
+
+.shipping-form,
+.payment-form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.shipping-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.two-columns {
+  display: flex;
+  gap: 16px;
+}
+
+.shipping-input {
+  display: flex;
+  border: 1px solid var(--gray-600);
+  border-radius: 4px;
+  height: 56px;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  padding-left: 24px;
+  background-color: var(--white);
+  margin: 10px 0 24px 0;
+}
+
+#proceed {
+  width: 100%;
+  margin-top: 32px;
+}
+
+/* payment method */
+
+.payment-method {
+  margin-top: 80px;
+}
+
+.secure {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--gray-600);
+  margin-bottom: 56px;
+}
+
+.radio {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--gray-500);
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.payment-title {
+  font-size: 24px;
+  color: var(--gray-800);
+  font-weight: 500;
+}
+
+.credit-cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 80px;
+}
+
+.radio-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+#card-number,
+#card-name {
+  max-width: 556px;
+}
+
+#expiration,
+#cvv {
+  width: 100%;
+}
+
+#confirm {
+  width: 100%;
+  margin: 56px 0 100px 0;
+}
+
+/* thank you modal */
+
+.thanks {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 32px;
+  color: var(--gray-800);
+  font-weight: 600;
+  margin: -120px 0 40px 0;
+}
+
+#thanks-img {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.message {
+  font-size: 16px;
+  color: var(--gray-800);
+}
+
+.confirmation {
+  max-width: 664px;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 1px 1px 10px var(--gray-100);
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+/* payment responsive */
+
+@media (max-width: 660px) {
+  .credit-cards {
+    margin-left: 24px;
+  }
+
+  .two-columns {
+    align-items: end;
+  }
+}
+
+/* empty cart */
+
+.empty {
+  height: 634px;
+  width: 100%;
+  background-image: url("/assets/empty1.png"), url("/assets/bubble.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 90%, 10% 10%;
+  background-color: var(--gray-50);
+  border-radius: 8px;
+  margin: 80px 0;
+  box-shadow: 1px 1px 10px 1px var(--gray-200);
+}
+
+.empty:hover {
+  background-image: url("/assets/empty2.png"), url("/assets/bubble.png");
+}
+
+/* empty responsive */
+
+@media (max-width: 1160px) {
+  .empty {
+    background-size: 40%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 660px) {
+  .empty {
+    height: 300px;
+  }
 }
