@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-details</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/shop.css" />
+  </head>
+  <body>
+    <main>
+      <div class="hamburger-drop">
+        <header>
+          <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
+          <ul class="top-nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Shop</li>
+            <li>Cart</li>
+          </ul>
+
+          <img
+            src="/assets/icons/menu-05.svg"
+            alt="menu"
+            width="24"
+            class="menu"
+          />
+        </header>
+
+        <div class="header2 hidden">
+          <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
+          <ul class="top-nav">
+            <li>Home</li>
+            <li>About</li>
+            <div class="shop-drop">
+              <li>Shop</li>
+              <!-- shop select dropdown -->
+              <div class="shop-select">
+                <p class="select-item">Women's</p>
+                <p class="select-item">Men's</p>
+              </div>
+            </div>
+            <li>Cart</li>
+          </ul>
+
+          <img
+            src="/assets/icons/menu-05.svg"
+            alt="menu"
+            width="24"
+            class="menu"
+          />
+        </div>
+        <!-- hamburger menu -->
+        <div class="hamburger hidden">
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/home-04.svg" alt="home" width="24" />
+              <p class="menu">Home</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/book-02.svg" alt="book" width="24" />
+              <p class="menu">About</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img
+                src="/assets/icons/glasses-02.svg"
+                alt="eyeglasses"
+                width="24"
+              />
+              <p class="menu">Shop</p>
+            </div>
+            <img src="/assets/icons/chevron-down.svg" alt="chevron" width="24" />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/cart.svg" alt="cart" width="24" />
+              <p class="menu">Cart</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/mail-01.svg" alt="mail" width="24" />
+              <p class="menu">Contact</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img
+                src="/assets/icons/help-circle-contained.svg"
+                alt="question"
+                width="24"
+              />
+              <p class="menu">FAQ</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+        </div>
+
+        <!-- hamburger-expanded -->
+
+        <div class="hamburger-expanded hidden">
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/home-04.svg" alt="home" width="24" />
+              <p class="menu">Home</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/book-02.svg" alt="book" width="24" />
+              <p class="menu">About</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img
+                src="/assets/icons/glasses-02.svg"
+                alt="eyeglasses"
+                width="24"
+              />
+              <p class="menu">Shop</p>
+            </div>
+            <img src="/assets/icons/chevron-up.svg" alt="chevron" width="24" />
+          </div>
+
+          <div class="menu-item-select">
+            <p class="menu">Women's</p>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="menu-item-select">
+            <p class="menu">Men's</p>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/cart.svg" alt="cart" width="24" />
+              <p class="menu">Cart</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img src="/assets/icons/mail-01.svg" alt="mail" width="24" />
+              <p class="menu">Contact</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+
+          <div class="line">
+            <div class="menu-item">
+              <img
+                src="/assets/icons/help-circle-contained.svg"
+                alt="question"
+                width="24"
+              />
+              <p class="menu">FAQ</p>
+            </div>
+            <img
+              src="/assets/icons/chevron-right.svg"
+              alt="chevron"
+              width="24"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- contents start here -->
+
+ 
+<section class="cart-section">
+              <img
+                src="/assets/eyeglasses-red.png"
+                alt="eyeglasses"
+                id="cart-img"
+              />
+
+              <aside>
+            <p class="product-name">Popsicle</p>
+            <p class="product-number">AFS-25B</p>
+            <p class="product-price">USD 230</p>
+
+            <div class="counter-btn">
+            <div class="counter">
+            <img src="/assets/icons/caret-down.svg" alt="carret" id="carret-down">
+            <p class="qty">1</p>
+            <img src="/assets/icons/caret-up.svg" alt="carret" id="carret-up"></div>
+
+            <button class="filled-btn">Add to Cart<img src="/assets/icons/cart.svg"></button></div>
+
+            <div class="description">
+            <div class="row">
+            <p class="desc-items">Eye: 57mm</p>
+            <p class="desc-items">Bridge: 18mm</p>
+            <p class="desc-items">Temple: 145mm</p></div>
+
+            <div class="row">
+            <p class="desc-items">Material: Nylon</p>
+            <p class="desc-items">Front Color: Red</p>
+            <p class="desc-items">Fit: Narrow</p></div></div>
+              </aside>
+</section>
+
+<div class="cart">
+<div class="cart-line">
+    <div class="left-items">
+<img src="/assets/eyeglasses-red.png" alt="eyeglasses" class="small-img">
+<div class="name-number">
+<p class="line-name">Popsicle</p><p class="line-number">AFS-25B</p></div>
+
+<div class="counter" id="line-counter">
+            <img src="/assets/icons/caret-down.svg" alt="carret" id="carret-down">
+            <p class="qty">1</p>
+            <img src="/assets/icons/caret-up.svg" alt="carret" id="carret-up"></div>
+
+            <p class="line-price">USD 230</p></div>
+            <img src="/assets/icons/trash-outline.svg" alt="trash" class="trash"></div>
+
+            <div class="total">
+           <div class="amount-line"> <p class="amount-title">Shipping</p><p id="shipping-amount">Free</p></div>
+           <div class="amount-line"> <p class="amount-title">TOTAL</p><p id="total-amount">USD 770.00</p></div></div>
+            
+           <button class="filled-btn" id="check-out">Check Out<img src="/assets/icons/arrow-right.svg"></button></div>
+
+<div class="continue">
+    <img src="/assets/icons/arrow-left.svg" alt="arrow"><p class="shopping">Continue shopping</p>
+</div>
+
+        
+          <!-- contact form -->
+
+          <form class="hidden">
+            <label for="name">Name<span class="required">*</span></label>
+            <input type="text" id="name" placeholder="Jane Doe" />
+            <small class="hidden">This field is required</small>
+
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" placeholder="jane@gmail.com" />
+            <small class="hidden">This field is required</small>
+
+            <label for="message">Message<span class="required">*</span></label>
+            <textarea id="message" placeholder="Enter something..."></textarea
+            ><small class="hidden">This field is required</small>
+
+            <button class="filled-btn" id="send">
+              Send<img src="/assets/icons/send.svg" alt="send" width="24" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="/assets/outline-logo.svg" alt="logo" width="100" id="logo" />
+      <ul class="footer-nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Shop</li>
+        <li>Cart</li>
+      </ul>
+      <ul class="footer-nav">
+        <li>Contact</li>
+        <li>FAQ</li>
+        <li>Terms and Conditions</li>
+        <div id="social">
+          <img src="/assets/icons/Instagram.svg" alt="instagram" width="24" />
+          <img src="/assets/icons/FB.svg" alt="facebook" width="24" />
+          <img src="/assets/icons/Linkedin.svg" alt="linkedin" width="24" />
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>
