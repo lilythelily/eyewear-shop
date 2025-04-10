@@ -30,7 +30,7 @@
         <li>Shop</li>
 <!-- shop select dropdown -->
  <div class="shop-select">
- <p class="select-item">Women's</p>
+<p class="select-item">Women's</p>
   <p class="select-item">Men's</p></div></div>
         <li>Cart</li>
       </ul>
@@ -61,7 +61,7 @@
 
 <div class="line">
 <div class="menu-item">
-<img src="assets/icons/cart.svg" alt="cart" width="24">
+<img src="assets/icons/cart-gray.svg" alt="cart" width="24">
 <p class="menu">Cart</p></div>
 <img src="assets/icons/chevron-right.svg" alt="chevron" width="24"></div>
 
@@ -215,29 +215,38 @@
        
         <div class="email-error">
           <div class="input-icon">
-        <input type="text" class="subscribe-email" placeholder="Your Email Address"><div class="send-icon"><img src="/assets/icons/send-gray.svg" alt="send"></div></div>
-        <small class="subsc-error, hidden">Please enter valid email address.</small></div>
+        <input type="text" class="subscribe-email" placeholder="Your Email Address" id="email-input"><div class="send-icon"><img src="/assets/icons/send-gray.svg" alt="send"></div></div>
+        <small class="hidden" id="subsc-error">Please enter a valid email address.</small></div>
 
       
 
         <!-- contact form -->
 
-<form class="hidden">
+<form class="hidden" id="contact-form">
 <label for="name">Name<span class="required">*</span></label>
-  <input type="text" id="name" placeholder="Jane Doe">
-  <small class="hidden">This field is required</small>
+  <input type="text" id="name" placeholder="Jane Smith">
+  <small class="hidden"></small>
 
   <label for="email">Email<span class="required">*</span></label>
   <input type="email" id="email" placeholder="jane@gmail.com">
-  <small class="hidden">This field is required</small>
+  <small class="hidden"></small>
 
   <label for="message">Message<span class="required">*</span></label>
-  <textarea id="message" placeholder="Enter something..."></textarea><small class="hidden">This field is required</small>
+  <textarea id="message" placeholder="Enter something..."></textarea><small class="hidden">This field is required.</small>
 
   <button class="filled-btn" id="send">Send<img src="assets/icons/send.svg" alt="send" width="24"></button>
 </form>
 
       </div>
+
+      <!-- thanks popup -->
+
+      <div class="hidden" id="thanks-popup">
+        <h2>Thank you!</h2>
+        We will get back to you ASAP!</div>
+
+
+
     </main>
 
       <footer>
@@ -249,7 +258,7 @@
         <li>Cart</li>
       </ul>
       <ul class="footer-nav">
-        <li>Contact</li>
+        <li class="footer-contact">Contact</li>
         <li>FAQ</li>
         <li>Terms and Conditions</li>
       <div id="social">
@@ -261,6 +270,6 @@
 
 
 <script src="/js/index.js"></script>
-
+ <script src="/js/products.js"></script>
   </body>
 </html>

@@ -221,7 +221,7 @@ aside {
   margin-right: 4px;
 }
 
-.trash {
+#trash {
   background-color: var(--gray-900);
   padding: 20px;
   border-radius: 100%;
@@ -230,7 +230,7 @@ aside {
   cursor: pointer;
 }
 
-.trash:hover {
+#trash:hover {
   background-color: var(--red);
 }
 
@@ -239,7 +239,7 @@ aside {
   align-items: center;
 }
 
-.cart-line {
+#cart-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -331,7 +331,7 @@ aside {
   .line-name {
     font-size: 24px;
   }
-  .trash {
+  #trash {
     width: 32px;
     height: 32px;
     padding: 6px;
@@ -356,7 +356,7 @@ aside {
   .amount-line {
     width: 100%;
   }
-  .cart-line {
+  #cart-line {
     padding-left: 0;
   }
 }
@@ -364,7 +364,7 @@ aside {
 /* order summary */
 
 #order-summary {
-  margin: 100px 0 -80px 0;
+  margin: 40px 0;
 }
 
 .shipping-address {
@@ -374,7 +374,7 @@ aside {
   margin-bottom: 40px;
 }
 
-.shipping-form,
+#shipping-form,
 .payment-form {
   display: flex;
   flex-direction: column;
@@ -384,7 +384,11 @@ aside {
   max-width: 800px;
 }
 
-.shipping-container {
+#shipping-form small {
+  margin-top: -10px;
+}
+
+#shipping-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,11 +433,30 @@ aside {
 }
 
 .radio {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--gray-500);
+  width: 20px;
+  height: 20px;
   margin-right: 24px;
   cursor: pointer;
+  accent-color: var(--gray-600);
+}
+
+.radio-btn{
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  outline: 1.4px solid var(--gray-500);
+  outline-offset: 4px;
+  cursor:pointer;
+}
+
+.radio-checked{
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  outline: 1.4px solid var(--gray-500);
+  outline-offset: 4px;
+  cursor:pointer;
+  background-color: var(--gray-500);
 }
 
 .payment-title {
@@ -452,12 +475,20 @@ aside {
 .radio-title {
   display: flex;
   align-items: center;
+  gap: 24px;
   margin-bottom: 24px;
+  background-color: #fff;
 }
+
 
 #card-number,
 #card-name {
   max-width: 556px;
+}
+
+.card-column{
+  display: flex;
+  gap: 8px;
 }
 
 #expiration,
@@ -500,8 +531,15 @@ aside {
   position: absolute;
   z-index: 10;
   transform: translate(-50%, -50%);
-  top: 70%;
+  top: 50%;
   left: 50%;
+}
+
+#close{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+cursor: pointer;
 }
 
 .overlay {

@@ -5,9 +5,6 @@ const menuDrop = document.querySelector(".hamburger");
 const shop = document.querySelector("#shop");
 const header = document.querySelector("header");
 const header2 = document.querySelector(".header2");
-const sendBtn = document.querySelector(".send-icon");
-const subscError = document.querySelector("#subsc-error");
-const emailInput = document.querySelector("#email-input");
 const contactForm = document.querySelector("#contact-form");
 const contactBtn = document.querySelector(".footer-contact");
 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -55,44 +52,6 @@ document.addEventListener("click", (e) => {
 
 hamburgerMenu.addEventListener("click", (e) => {
   showDropdown();
-});
-
-// email validation
-
-function showSubscError() {
-  subscError.classList.remove("hidden");
-}
-
-function hideSubscError() {
-  subscError.classList.add("hidden");
-}
-
-function emailIsValid(input) {
-  if (!regex.test(input.value.trim())) {
-    showSubscError();
-  } else {
-    sendBtn.style.backgroundColor = "#EEFFEC";
-    hideSubscError();
-    clearEmail();
-  }
-}
-
-function emptyCheck(input) {
-  if (input.value === "") {
-    showSubscError();
-  }
-}
-
-function clearEmail() {
-  emailInput.value = "";
-  sendBtn.styleBackgroundColor = "#f3f4f6";
-  hideSubscError();
-}
-
-sendBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  emptyCheck(emailInput);
-  emailIsValid(emailInput);
 });
 
 // contact form control
@@ -144,7 +103,6 @@ function validateForm() {
       textArea.nextElementSibling.classList.add("hidden");
       textArea.style.borderColor = "#e5e7eb";
     }
-
 
     // if email is invalid
     if (!regex.test(email.value.trim())) {
