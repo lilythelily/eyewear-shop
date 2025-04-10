@@ -112,7 +112,7 @@ header {
 
 .hero-img {
   position: absolute;
-  background-image: url("assets/hero-img.png");
+  background-image: url("../assets/hero-img.png");
   background-repeat: no-repeat;
   background-position: 97% 40%;
   background-size: 750px;
@@ -198,7 +198,7 @@ h2 {
 .scroll-img {
   width: 454px;
   height: 454px;
-  background-image: url("assets/eyeglasses-black.png");
+  background-image: url("../assets/eyeglasses-black.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 8px;
@@ -211,11 +211,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-black.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-black.png) lightgray 50% / cover no-repeat;
 }
 
 #new2 {
-  background-image: url("assets/eyeglasses-brown-round.png");
+  background-image: url("../assets/eyeglasses-brown-round.png");
 }
 #new2:hover {
   background: linear-gradient(
@@ -223,11 +223,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-brown-round.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-brown-round.png) lightgray 50% / cover no-repeat;
 }
 
 #new3 {
-  background-image: url("assets/eyeglasses-green-square.png");
+  background-image: url("../assets/eyeglasses-green-square.png");
 }
 #new3:hover {
   background: linear-gradient(
@@ -235,11 +235,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-green-square.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-green-square.png) lightgray 50% / cover no-repeat;
 }
 
 #new4 {
-  background-image: url("assets/eyeglasses-green.png");
+  background-image: url("../assets/eyeglasses-green.png");
 }
 #new4:hover {
   background: linear-gradient(
@@ -247,11 +247,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-green.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-green.png) lightgray 50% / cover no-repeat;
 }
 
 #new5 {
-  background-image: url("assets/eyeglasses-navy.png");
+  background-image: url("../assets/eyeglasses-navy.png");
 }
 #new5:hover {
   background: linear-gradient(
@@ -259,7 +259,7 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-navy.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-navy.png) lightgray 50% / cover no-repeat;
 }
 
 .scroll-wrapper {
@@ -275,7 +275,7 @@ h2 {
 }
 
 #man-illustration {
-  background-image: url("assets/man-drawing.png");
+  background-image: url("../assets/man-drawing.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 380px;
@@ -285,7 +285,7 @@ h2 {
 }
 
 #woman-illustration {
-  background-image: url("assets/woman-drawing.png");
+  background-image: url("../assets/woman-drawing.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 380px;
@@ -301,7 +301,7 @@ h2 {
 }
 
 #mid1 {
-  background-image: url("assets/mens-eye1.png");
+  background-image: url("../assets/mens-eye1.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -315,11 +315,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/mens-eye1.png) lightgray 50% / cover no-repeat;
+    url(../assets/mens-eye1.png) lightgray 50% / cover no-repeat;
 }
 
 #mid2 {
-  background-image: url("assets/mens-eye2.png");
+  background-image: url("../assets/mens-eye2.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -333,10 +333,10 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/mens-eye2.png) lightgray 50% / cover no-repeat;
+    url(../assets/mens-eye2.png) lightgray 50% / cover no-repeat;
 }
 #mid3 {
-  background-image: url("assets/eyeglasses-brown-square.png");
+  background-image: url("../assets/eyeglasses-brown-square.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -350,11 +350,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-brown-square.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-brown-square.png) lightgray 50% / cover no-repeat;
 }
 
 #mid4 {
-  background-image: url("assets/mens-eye3.png");
+  background-image: url("../assets/mens-eye3.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -368,7 +368,7 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/mens-eye3.png) lightgray 50% / cover no-repeat;
+    url(../assets/mens-eye3.png) lightgray 50% / cover no-repeat;
 }
 
 .four-img {
@@ -389,7 +389,7 @@ h2 {
 }
 
 #mid5 {
-  background-image: url("assets/eyeglasses-red.png");
+  background-image: url("../assets/eyeglasses-red.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -403,11 +403,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-red.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-red.png) lightgray 50% / cover no-repeat;
 }
 
 #mid6 {
-  background-image: url("assets/eyeglasses-brown-round.png");
+  background-image: url("../assets/eyeglasses-brown-round.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -421,11 +421,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-brown-round.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-brown-round.png) lightgray 50% / cover no-repeat;
 }
 
 #mid7 {
-  background-image: url("assets/eyeglasses-green-square.png");
+  background-image: url("../assets/eyeglasses-green-square.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -439,11 +439,11 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-green-square.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-green-square.png) lightgray 50% / cover no-repeat;
 }
 
 #mid8 {
-  background-image: url("assets/eyeglasses-navy.png");
+  background-image: url("../assets/eyeglasses-navy.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -457,7 +457,7 @@ h2 {
       rgba(58, 133, 76, 0.1) 0%,
       rgba(58, 133, 76, 0.1) 100%
     ),
-    url(assets/eyeglasses-navy.png) lightgray 50% / cover no-repeat;
+    url(../assets/eyeglasses-navy.png) lightgray 50% / cover no-repeat;
 }
 
 .date {
@@ -577,7 +577,7 @@ h2 {
   margin-bottom: 40px;
   border-bottom: 2px solid var(--gray-400);
   cursor: pointer;
-  background-image: url("assets/eyeglass-drawing1.png");
+  background-image: url("../assets/eyeglass-drawing1.png");
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: right;
