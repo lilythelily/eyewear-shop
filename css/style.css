@@ -39,6 +39,10 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--gray-800);
+}
+a:visited {
+  color: var(--gray-800);
 }
 
 main {
