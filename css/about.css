@@ -45,7 +45,7 @@ body {
 }
 
 .bg {
-  background-image: url("/assets/eyeglass-drawing1.png");
+  background-image: url("../assets/eyeglass-drawing1.png");
   background-repeat: no-repeat;
   background-size: 80%;
   opacity: 0.4;
@@ -65,7 +65,7 @@ h3 {
 }
 
 #bg {
-  background-image: url("/assets/eyeglass-drawing1.png");
+  background-image: url("../assets/eyeglass-drawing1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -89,7 +89,7 @@ section {
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url("/assets/artisan1.png");
+    url("../assets/artisan1.png");
   background-blend-mode: multiply, multiply;
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 170%;
@@ -99,7 +99,7 @@ section {
 }
 
 #workshop2 {
-  background: url("/assets/logo-eyeglasses.png");
+  background: url("../assets/logo-eyeglasses.png");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +113,7 @@ section {
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url("/assets/mens-eye5.png");
+    url("../assets/mens-eye5.png");
   background-blend-mode: multiply, multiply;
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 100%;
@@ -128,7 +128,7 @@ section {
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url("/assets/artisan2.png");
+    url("../assets/artisan2.png");
   background-blend-mode: multiply, multiply;
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 170%;

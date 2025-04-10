@@ -440,22 +440,22 @@ aside {
   accent-color: var(--gray-600);
 }
 
-.radio-btn{
+.radio-btn {
   width: 12px;
   height: 12px;
   border-radius: 100%;
   outline: 1.4px solid var(--gray-500);
   outline-offset: 4px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.radio-checked{
+.radio-checked {
   width: 12px;
   height: 12px;
   border-radius: 100%;
   outline: 1.4px solid var(--gray-500);
   outline-offset: 4px;
-  cursor:pointer;
+  cursor: pointer;
   background-color: var(--gray-500);
 }
 
@@ -480,13 +480,12 @@ aside {
   background-color: #fff;
 }
 
-
 #card-number,
 #card-name {
   max-width: 556px;
 }
 
-.card-column{
+.card-column {
   display: flex;
   gap: 8px;
 }
@@ -535,11 +534,11 @@ aside {
   left: 50%;
 }
 
-#close{
+#close {
   position: absolute;
   top: 5%;
   right: 5%;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .overlay {
@@ -569,7 +568,7 @@ cursor: pointer;
 .empty {
   height: 634px;
   width: 100%;
-  background-image: url("/assets/empty1.png"), url("/assets/bubble.png");
+  background-image: url("../assets/empty1.png"), url("../assets/bubble.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 90%, 10% 10%;
   background-color: var(--gray-50);
@@ -579,7 +578,7 @@ cursor: pointer;
 }
 
 .empty:hover {
-  background-image: url("/assets/empty2.png"), url("/assets/bubble.png");
+  background-image: url("../assets/empty2.png"), url("../assets/bubble.png");
 }
 
 /* empty responsive */
