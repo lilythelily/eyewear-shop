@@ -540,7 +540,7 @@ h2 {
 .email-error {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 100px;
 }
 .send-icon {
