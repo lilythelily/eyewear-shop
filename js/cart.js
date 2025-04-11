@@ -121,7 +121,7 @@ function validateShippingForm() {
     // if tel number is NAN
     if (!telRegex.test(shippingTel.value.trim())) {
       shippingTel.nextElementSibling.classList.remove("hidden");
-      shippingTel.nextElementSibling.textContent = `Please enter valid numbers.`;
+      shippingTel.nextElementSibling.textContent = `Please enter a valid number.`;
       shippingTel.style.borderColor = "rgb(238, 46, 46)";
       isValid = false;
       formIsValid = false;
@@ -144,7 +144,7 @@ function validateShippingForm() {
     // if zip code is invalid
     if (!zipRegex.test(zip.value.trim())) {
       zip.nextElementSibling.classList.remove("hidden");
-      zip.nextElementSibling.textContent = `Please enter valid numbers.`;
+      zip.nextElementSibling.textContent = `Please enter a valid number.`;
       zip.style.borderColor = "rgb(238, 46, 46)";
       isValid = false;
       formIsValid = false;

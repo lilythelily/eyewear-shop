@@ -314,53 +314,6 @@ aside {
   margin-bottom: 60px;
 }
 
-/* detail page responsive */
-
-@media (max-width: 900px) {
-  .cart-section {
-    grid-template-columns: 40% 60%;
-  }
-
-  .small-img {
-    width: 40px;
-    height: 40px;
-  }
-  .line-price {
-    font-size: 24px;
-  }
-  .line-name {
-    font-size: 24px;
-  }
-  #trash {
-    width: 32px;
-    height: 32px;
-    padding: 6px;
-  }
-
-  .amount-title {
-    font-size: 20px;
-  }
-
-  #total-amount {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 660px) {
-  .cart-section {
-    grid-template-columns: 1fr;
-  }
-  .small-img {
-    display: none;
-  }
-  .amount-line {
-    width: 100%;
-  }
-  #cart-line {
-    padding-left: 0;
-  }
-}
-
 /* order summary */
 
 #order-summary {
@@ -374,14 +327,31 @@ aside {
   margin-bottom: 40px;
 }
 
-#shipping-form,
-.payment-form {
+#shipping-form {
   display: flex;
   flex-direction: column;
 
   padding: 24px 0;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.payment-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #shipping-form small {
@@ -422,7 +392,7 @@ aside {
 /* payment method */
 
 .payment-method {
-  margin-top: 80px;
+  margin: 80px 0 24px 0;
 }
 
 .secure {
@@ -496,7 +466,7 @@ aside {
 }
 
 #confirm {
-  width: 100%;
+  max-width: 100%;
   margin: 56px 0 100px 0;
 }
 
@@ -554,8 +524,11 @@ aside {
 /* payment responsive */
 
 @media (max-width: 660px) {
+  #confirm {
+    width: 100%;
+  }
   .credit-cards {
-    margin-left: 24px;
+    display: none;
   }
 
   .two-columns {
@@ -593,5 +566,64 @@ aside {
 @media (max-width: 660px) {
   .empty {
     height: 300px;
+  }
+}
+
+/* shop responsive */
+
+@media (max-width: 640px) {
+  .two-items {
+    flex-direction: column;
+  }
+}
+
+/* detail page responsive */
+
+@media (max-width: 900px) {
+  .cart-section {
+    grid-template-columns: 40% 60%;
+  }
+
+  .small-img {
+    width: 40px;
+    height: 40px;
+  }
+  .line-price {
+    font-size: 24px;
+  }
+  .line-name {
+    font-size: 24px;
+  }
+  #trash {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
+
+  .amount-title {
+    font-size: 20px;
+  }
+
+  #total-amount {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 660px) {
+  .cart-section {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    margin: 0 auto;
+  }
+  .small-img {
+    display: none;
+  }
+  .amount-line {
+    width: 100%;
+  }
+  #cart-line {
+    padding-left: 0;
   }
 }

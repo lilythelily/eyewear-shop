@@ -1,6 +1,6 @@
 "use strict";
 
-const hamburgerMenu = document.querySelector(".menu");
+const hamburgerBtn = document.querySelector(".menu");
 const menuDrop = document.querySelector(".hamburger");
 const shop = document.querySelector("#shop");
 const header = document.querySelector("header");
@@ -11,6 +11,8 @@ const emailInput = document.querySelector("#email-input");
 const contactForm = document.querySelector("#contact-form");
 const contactBtn = document.querySelector(".footer-contact");
 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const hamburgerExpanded = document.querySelector(".hamburger-expanded");
+const shopLine = menuDrop.querySelector("#shop-line");
 
 // header control
 
@@ -30,31 +32,46 @@ function showDropdown() {
 
 function hideDropdown() {
   menuDrop.classList.add("hidden");
+  hamburgerExpanded.classList.add("hidden");
 }
 
 shop.addEventListener("click", (e) => {
   showNewHeader();
 });
 
-// Clear state - document click
+// show expanded hamburger list
+
+function expandedHamburger() {
+  menuDrop.classList.add("hidden");
+  hamburgerExpanded.classList.remove("hidden");
+}
+
+shopLine.addEventListener("click", (e) => {
+  expandedHamburger();
+});
+
+// Clear state & hamburger control
 
 document.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target !== shop) {
     hideNewHeader();
   }
-  if (e.target !== hamburgerMenu) {
-    hideDropdown();
+  if (e.target == hamburgerBtn) {
+    if (
+      menuDrop.classList.contains("hidden") &&
+      hamburgerExpanded.classList.contains("hidden")
+    ) {
+      showDropdown();
+    } else {
+      hideDropdown();
+    }
   }
   if (!contactForm.classList.contains("hidden")) {
     if (e.target !== contactBtn && !contactForm.contains(e.target)) {
       hideContactForm();
     }
   }
-});
-
-hamburgerMenu.addEventListener("click", (e) => {
-  showDropdown();
 });
 
 // email validation
@@ -144,7 +161,6 @@ function validateForm() {
       textArea.nextElementSibling.classList.add("hidden");
       textArea.style.borderColor = "#e5e7eb";
     }
-
 
     // if email is invalid
     if (!regex.test(email.value.trim())) {
