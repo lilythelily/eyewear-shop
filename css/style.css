@@ -86,7 +86,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 48px;
-  width: 100vw;
+  width: 100%;
 }
 
 .logo {

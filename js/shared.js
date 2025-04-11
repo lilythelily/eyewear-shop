@@ -50,7 +50,6 @@ shopLine.addEventListener("click", (e) => {
 // Clear state & hamburger control
 
 document.addEventListener("click", (e) => {
-  e.preventDefault();
   if (e.target !== shop) {
     hideNewHeader();
   }
