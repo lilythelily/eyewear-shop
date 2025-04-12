@@ -26,19 +26,19 @@
 }
 
 #bar {
-  height: 60px;
-  width: 16px;
+  height: 3.75rem;
+  width: 1rem;
   background-color: var(--gray-900);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-family: "Lexend Zetta", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   color: var(--gray-600);
   line-height: 1.5;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 .text {
@@ -50,9 +50,9 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 25rem;
   opacity: 0.3;
-  margin-left: -180px;
+  margin-left: -11.25rem;
 }
 article {
   max-width: 60%;
@@ -60,7 +60,7 @@ article {
 }
 section {
   display: flex;
-  margin-top: 80px;
+  margin-top: 5rem;
   width: 100%;
 }
 
@@ -75,8 +75,8 @@ section {
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 170%;
   background-position: 20% 100%;
-  border-radius: 8px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0.0625rem 0.0625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.2);
 }
 
 #workshop2 {
@@ -84,8 +84,8 @@ section {
 
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 8px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0.0625rem 0.0625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.2);
 }
 
 #workshop3 {
@@ -99,8 +99,8 @@ section {
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 100%;
   background-position: 20% 100%;
-  border-radius: 8px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0.0625rem 0.0625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.2);
 }
 
 #workshop4 {
@@ -114,6 +114,6 @@ section {
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 170%;
   background-position: 20% 100%;
-  border-radius: 8px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0.0625rem 0.0625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.2);
 }
