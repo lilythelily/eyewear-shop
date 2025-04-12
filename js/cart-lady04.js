@@ -31,16 +31,16 @@ const lineNumber = document.querySelector(".line-number");
 const linePrice = document.querySelector("#price");
 
 const products = {
-  "AFS-25B": {
-    name: "Popsicle",
-    number: "AFS-25B",
-    price: "230",
-    img: "../assets/eyeglasses-red.png",
+  "DNT-65Q": {
+    name: "Midnight",
+    number: "DNT-65Q",
+    price: "256",
+    img: "../assets/eyeglasses-navy.png",
   },
 };
 
 // default product
-let selectedProduct = products["AFS-25B"];
+let selectedProduct = products["DNT-65Q"];
 
 // display selected product
 function displayProduct(product) {
